@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonobo Blackjack</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="/scoreboard.html"><span>High Scores</span></a>
+    </nav>
+    <section id="game-play-section">
+ 
+        <div id="money-bet-container">
+            <!-- MONEY + BET -->
+            <div id="player-money">Money: $2500</div>
+            <div id="current-wager">
+                <div class="star"></div>
+                <span id="current-wager-text">Current Wager:</span><span id="bet-amount">$0</span>
+            </div>
+        
+            <!-- BETTING -->
+            <div style="margin-top: 20px;">
+                <input type="number" id="bet-input" placeholder="Enter bet amount" min="1">
+                <button id="place-bet-btn">Place Bet</button>
+            </div>
+        </div>
+        
+        <div id="chips">
+            <div class="chip" data-value="1">$1</div>
+            <div class="chip" data-value="5">$5</div>
+            <div class="chip" data-value="25">$25</div>
+            <div class="chip" data-value="50">$50</div>
+            <div class="chip" data-value="100">$100</div>
+        </div>
+
+        <!-- MESSAGE -->
+        <div id="message-box" class="message"></div>
+    
+        <div id="cards-section">
+            <!-- DEALER -->
+            <div>
+                <h2>Dealer</h2>
+                <div id="dealer-total">Total: ?</div>
+                <div id="dealer-hand" class="hand"></div>
+            </div>
+        
+            <!-- PLAYER -->
+            <div>
+                <h2 id="player-title">Player: <span id="player-name-display">?</span></h2>
+                <div id="player-total">Total: 0</div>
+                <div id="player-hand" class="hand"></div>
+            </div>
+        </div>
+    
+        <!-- GAME BUTTONS -->
+        <div class="controls">
+            <button id="newgame-btn">Home</button>
+            <button id="play-btn" disabled>Play</button>
+            <button id="hit-btn" disabled>Hit</button>
+            <button id="stand-btn" disabled>Stand</button>
+            <button id="double-btn" disabled>Double</button>
+        </div>
+    <div id="round-modal" class="modal hidden">
+      <div>
+        <h2 id="round-result-text">Result</h2>
+        <div id="end-of-round-buttons">
+          <button id="modal-newgame-btn">Continue Playing?</button>
+          <button id="modal-endgame-btn">End Game</button>
+        </div>
+      </div>
+    </div>
+    
+    </section>
+
+    <!-- SCRIPTS -->
+    <script src="gamelogic.js"></script>
+    <script src="ui.js"></script>
+
+</body>
+</html>
