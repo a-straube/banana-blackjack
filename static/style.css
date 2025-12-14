@@ -13,6 +13,18 @@ body {
     text-align: center;
 }
 
+@font-face {
+    font-family: royalFlush;
+    src: url('RoyalFlushRegular-Dev1.ttf');
+}
+
+h1 {
+    font-family: royalFlush;
+    font-size: 8vw;
+    font-weight: 100;
+    margin: 0;
+}
+
 h2 { margin: 0; }
 
 button {
