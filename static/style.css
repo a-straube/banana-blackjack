@@ -48,48 +48,6 @@ button:not(.chip):hover, button:not(.chip):focus, button:not(.chip):active {
     box-shadow: 1px 0px 0px #000000;
 }
 
-nav {
-    display: flex;
-    position: relative;
-    top: 30px;
-    justify-content: flex-end;
-    width: 100%;
-    z-index: 2;
-    a {
-        color: #ffffff;
-        font-size: 22px;
-        /* font-weight: 900; */
-        line-height: 22px;
-        margin-right: 20px;
-        padding: 15px 18px;
-        position: relative;
-        text-decoration: none;
-        text-transform: uppercase;
-        span {
-            z-index: 2;
-            position: relative;
-        }
-    }
-    a:after {
-        content: '';
-        background: #da4c15;
-        height: 100%;
-            width: 0%;
-        position: absolute;
-            top: 0;
-            left: 50%;
-        transition: 300ms;
-    }
-    a:hover, a:focus, a:active {
-        text-decoration: none;
-        text-shadow: 1px 1px 1px black;
-    }
-    a:hover:after, a:focus:after, a:active:after {
-        left: 0;
-        width: 100%;
-    }
-}
-
 #game-play-section {
     padding-top: 50px;
 }
