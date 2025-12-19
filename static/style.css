@@ -373,18 +373,21 @@ button:not(.chip):hover, button:not(.chip):focus, button:not(.chip):active {
 
 .modal {
     align-items: center;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.9);
     border: 2px solid #ffffff;
     border-radius: 10px;
     color: #ffffff;
     display: flex;
     flex-direction: column;
-    height: 96vh;
-        width: 97vw;
+    height: 66vh;
+        width: 82vw;
     justify-content: center;
-    margin: 1vh 1vw;
+    margin: 0 auto;
     position: fixed;
-        top: 0;
+        left: 0;
+        right: 0;
+        top: 50%;
+    transform: translateY(-52%);
     z-index: 2;
     h2 {
         font-size: 14vw;
