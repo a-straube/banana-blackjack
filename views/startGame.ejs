@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonobo Blackjack</title>
+</head>
+
+<body>
+
+    <div>
+        <h2>Enter Your Name</h2>
+        <input type="text" id="playerNameInput" placeholder="">
+        <button id="submitBtn">Continue</button>
+    </div>
+
+    <script>
+        document.getElementById("submitBtn").addEventListener("click", function() {
+            const name = document.getElementById("playerNameInput").value.trim();
+            if (!name) {
+                alert("Please enter a name.");
+                return;
+            }
+            localStorage.setItem("playerName", name);
+            window.location.href = "/index.html";
+        });
+    </script>
+
+</body>
+</html>
