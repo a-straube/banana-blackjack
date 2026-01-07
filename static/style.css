@@ -14,15 +14,15 @@ body {
 }
 
 @font-face {
-    font-family: royalFlush;
-    src: url('RoyalFlushRegular-Dev1.ttf');
+    font-family: Sherlock;
+    src: url('Sherlock\ Vintage.ttf')
 }
 
 h1 {
-    font-family: royalFlush;
-    font-size: max(5vw, 40px);
+    font-family: Sherlock;
+    font-size: max(7vw, 40px);
     font-weight: 100;
-    margin: 0;
+    margin: 0 0 50px;
 }
 
 h2 { margin: 0; }
@@ -48,9 +48,7 @@ button:not(.chip):hover, button:not(.chip):focus, button:not(.chip):active {
     box-shadow: 1px 0px 0px #000000;
 }
 
-#game-play-section {
-    padding-top: 50px;
-}
+#game-play-section { padding-top: 35px; }
 
 #start-game-container {
     background-color: #365d3f;
@@ -250,7 +248,6 @@ button:not(.chip):hover, button:not(.chip):focus, button:not(.chip):active {
     align-items: center;
     display: flex;
     justify-content: space-evenly;
-    padding: 15px;
 }
 
 .hand {
