@@ -1,2 +1,2 @@
-# bonobo-blackjack
-Bonobo-themed blackjack game built with JavaScript
+# banana-blackjack
+Banana currency blackjack game built with JavaScript

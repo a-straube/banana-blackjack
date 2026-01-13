@@ -88,8 +88,8 @@ function canPlaceBetNow() {
 function renderGame() {
     const state = getGameState();
 
-    moneyDisplay.textContent = "Money: $" + state.money;
-    betDisplay.textContent = "$" + state.bet;
+    moneyDisplay.textContent = "Bananas:" + state.money;
+    betDisplay.textContent = state.bet;
 
     renderHand(playerHandDiv, state.playerHand, true);
     renderHand(dealerHandDiv, state.dealerHand, state.turnFlag !== 0);
@@ -181,14 +181,14 @@ chipButtons.forEach(chip => {
         const result = setBet(amount);
 
         if (result !== 1) {
-            showMessage("Not enough money to make that bet.", "error");
+            showMessage("Not enough bananas to make that bet.", "error");
             return;
         }
 
         renderGame();
 
         const state = getGameState();
-        showMessage(`Current bet: $${state.bet}. Click Place Bet to lock it in.`, "info");
+        showMessage(`Current bet: ${state.bet} bananas. Click Place Bet to lock it in.`, "info");
     });
 });
 
@@ -210,7 +210,7 @@ if (placeBetBtn) {
         betLocked = true;
         renderGame();
 
-        showMessage(`Bet locked in: $${state.bet}. Press Play to start!.`, "success");
+        showMessage(`Bet locked in: ${state.bet} bananas. Press Play to start!.`, "success");
 
         window.scrollTo({
             top: document.body.scrollHeight,
