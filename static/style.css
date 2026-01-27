@@ -190,6 +190,18 @@ button:not(.chip):hover, button:not(.chip):focus, button:not(.chip):active {
     width: 100%;
 }
 
+.chip-container {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 94% auto;
+}
+
+#chip-container-1 { background-image: url('banana-1.png'); }
+#chip-container-5 { background-image: url('banana-5.png'); }
+#chip-container-25 { background-image: url('banana-25.png'); }
+#chip-container-50 { background-image: url('banana-50.png'); }
+#chip-container-100 { background-image: url('banana-100.png'); }
+
 .chip {
     border: 10px dashed white;
     border-radius: 50%;
@@ -215,10 +227,11 @@ button:not(.chip):hover, button:not(.chip):focus, button:not(.chip):active {
         text-align: center;
         transform: translate(-50%, -50%);
     }
-    span {
-        position: relative;
-            top: -10px;
-    }
+}
+
+#chip-number-1 {
+    position: relative;
+    top: -10px;
 }
 
 .chip:hover {
