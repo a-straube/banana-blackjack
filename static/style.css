@@ -229,11 +229,6 @@ button:not(.chip):hover, button:not(.chip):focus, button:not(.chip):active {
     }
 }
 
-#chip-number-1 {
-    position: relative;
-    top: -10px;
-}
-
 .chip:hover {
     cursor: pointer;
     transform: scale(1.2);
